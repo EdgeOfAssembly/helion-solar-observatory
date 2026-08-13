@@ -23,21 +23,8 @@ Open http://localhost:8766/
 
 Asteroid belt has sphere–sphere collision, knockback, sparks, and hull damage.
 
-## Package contents
-
-This repo is seeded with README. The **full production build** (JS bundles + planet textures) is in the downloadable `Helion.zip` from the Grok session — unzip and push those files here to complete the tree.
-
-```
-Helion/
-  index.html
-  favicon.svg
-  assets/          # minified app + createSim + belt physics
-  textures/        # 2k planet maps (Solar System Scope, CC BY 4.0)
-  __grok/
-```
-
 ## Note
 
-Production build captured from the published app (minified). Original Grok Build TypeScript source is not included.
+This package is the **production build** captured from the published app (minified JS + planet textures). Source TypeScript from the original Grok Build project is not included.
 
 Surface maps © Solar System Scope — CC BY 4.0

@@ -12,6 +12,18 @@ python3 -m http.server 8766
 
 Open http://localhost:8766/
 
+### Chromium without GPU (`--disable-gpu`)
+
+If hardware acceleration is broken, WebGL falls back to **software** rendering (SwiftShader). That still works but first load can take **15–60+ seconds** while textures upload on the CPU. You should see a **progress bar** and stage text (not a frozen blank splash).
+
+Recommended launch flags:
+
+```bash
+chromium --disable-gpu --use-gl=angle http://localhost:8766/
+```
+
+If WebGL is completely unavailable, Helion shows an error with **Retry** instead of spinning forever.
+
 ## Controls
 
 - **Drag** — orbit camera
